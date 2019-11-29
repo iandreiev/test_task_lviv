@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/** 
+
+    @package Test task
+    @author Ivan Andreyev
+
+    */
+/** 
+    Построение простой двенадцатиколоночной сетки
+
+    @package Test task
+    @author Ivan Andreyev
+
+    */
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.container--fluid {
+  margin: 0;
+  max-width: 100%;
+}
+.container__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container__no-gutter {
+  margin: 0px;
+}
+.container__col-sm-1 {
+  flex-basis: 8.3333333333%;
+}
+.container__col-sm-2 {
+  flex-basis: 16.6666666667%;
+}
+.container__col-sm-3 {
+  flex-basis: 25%;
+}
+.container__col-sm-4 {
+  flex-basis: 33.3333333333%;
+}
+.container__col-sm-5 {
+  flex-basis: 41.6666666667%;
+}
+.container__col-sm-6 {
+  flex-basis: 50%;
+}
+.container__col-sm-7 {
+  flex-basis: 58.3333333333%;
+}
+.container__col-sm-8 {
+  flex-basis: 66.6666666667%;
+}
+.container__col-sm-9 {
+  flex-basis: 75%;
+}
+.container__col-sm-10 {
+  flex-basis: 83.3333333333%;
+}
+.container__col-sm-11 {
+  flex-basis: 91.6666666667%;
+}
+.container__col-sm-12 {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container__col-md-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .container__col-md-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .container__col-md-3 {
+    flex-basis: 25%;
+  }
+  .container__col-md-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .container__col-md-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .container__col-md-6 {
+    flex-basis: 50%;
+  }
+  .container__col-md-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .container__col-md-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .container__col-md-9 {
+    flex-basis: 75%;
+  }
+  .container__col-md-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .container__col-md-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .container__col-md-12 {
+    flex-basis: 100%;
+  }
+}
+
+.container {
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+[class*=container__col-] {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.card--green {
+  color: #fff;
+  background-color: #A6CC45;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+}
+
+.card--blue {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.21));
+  color: #466D8A;
+}
+
+.card-header {
+  display: flex;
+}
+
+.card-description {
+  text-align: right;
+  flex: auto;
+  padding-right: 20px;
+}
+
+.card-content {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(166, 204, 69, 0.8);
+  padding: 90px 30px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.view {
+  visibility: visible !important;
+  transition: 0.5s;
+}
+
+.card-content h1 {
+  font-size: 48px;
+}
+
+.logo {
+  width: 250px !important;
+  height: 250px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.helper {
+  background: rgba(166, 204, 69, 0.8);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+.gradient_top {
+  background: linear-gradient(180deg, #EBF0F3 0%, rgba(255, 255, 255, 0) 9.53%);
+  width: 100vw;
+  height: 66%;
+  position: fixed;
+  z-index: -999;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  margin: 40px;
+}
+
+.btn {
+  padding: 10px 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-outlined {
+  border: 2px solid #fff;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.btn-outlined:hover {
+  background: #fff;
+  color: #212121;
+}
+
+.btn-regular {
+  background: #4DC6E4;
+  color: #fff;
+}
+
+.btn-square {
+  background: #A6CC45;
+  color: #fff;
+  padding: 20px 35px;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=phone] {
+  padding: 15px 10px;
+  border: 0px solid #fff;
+  margin: 5px 0px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #7C9CAC;
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=common.css.map */

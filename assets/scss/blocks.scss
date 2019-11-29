@@ -1,0 +1,59 @@
+//modal
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="phone"]{
+    padding: 15px 10px;
+    border: 0px solid #fff;
+    margin: 5px 0px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #7C9CAC;
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+  }
+  
+  .modal-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  /* The Close Button */
+  .close {
+    color: $white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
