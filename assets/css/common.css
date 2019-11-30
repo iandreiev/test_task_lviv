@@ -5,6 +5,25 @@
     @author Ivan Andreyev
 
     */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Rubik", sans-serif;
+  margin: 0px;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+.wrapper {
+  margin: 40px;
+}
+
 /** 
     Построение простой двенадцатиколоночной сетки
 
@@ -181,42 +200,13 @@
 
 .container__footer {
   display: flex;
+  flex-direction: row-reverse;
+  padding: 20px 0px;
   align-items: center;
-  justify-content: end;
 }
 
 .helper {
   background: rgba(166, 204, 69, 0.8);
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: "Rubik", sans-serif;
-  margin: 0px;
-}
-
-h1, h2 {
-  font-weight: 500;
-}
-
-.gradient_top {
-  background: linear-gradient(180deg, #EBF0F3 0%, rgba(255, 255, 255, 0) 9.53%);
-  width: 100vw;
-  height: 66%;
-  position: fixed;
-  z-index: -999;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-}
-
-.wrapper {
-  margin: 40px;
 }
 
 .btn {
@@ -316,6 +306,32 @@ input[type=phone] {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+.plus-minus-toggle {
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  width: 21px;
+}
+.plus-minus-toggle:before, .plus-minus-toggle:after {
+  background: #fff;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 21px;
+  transition: transform 500ms ease;
+}
+.plus-minus-toggle:after {
+  transform-origin: center;
+}
+.plus-minus-toggle.collapsed:after {
+  transform: rotate(90deg);
+}
+.plus-minus-toggle.collapsed:before {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=common.css.map */

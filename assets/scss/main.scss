@@ -13,17 +13,6 @@ h1,h2{
     font-weight: $fw-500;
 }
 
-.gradient_top{
-    background: linear-gradient(180deg, #EBF0F3 0%, rgba(255, 255, 255, 0) 9.53%);
-    width: 100vw;
-    height: 66%;
-    position: fixed;
-    z-index: -999;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-}
-
 .wrapper{
     margin: 40px;
 }

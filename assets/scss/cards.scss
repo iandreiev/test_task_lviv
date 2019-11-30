@@ -1,0 +1,76 @@
+.card{
+    width: 100%;
+    height: 100%;
+    background: $white;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.card--green{
+    color: $white;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: $t-time;
+}
+
+.card--blue{
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.21));
+    color: $navy;
+}
+
+.card-header{
+    display: flex;
+}
+
+.card-description{
+    text-align: right;
+    flex: auto;
+    padding-right: 20px;
+}
+
+.card-content{
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(166,204,69, .8);
+    padding: 90px 30px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.view{
+    visibility: visible !important;
+    transition: $t-time;
+}
+
+.card-content h1{
+    font-size: 48px;
+}
+
+.logo{
+    width: 250px !important;
+    height: 250px !important;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container__footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 0px;
+    align-items: center;
+    
+}
+
+.helper{
+    background: rgba(166,204,69, .8);
+}
